@@ -4932,12 +4932,12 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 .breadcrumbs-custom {
 	position: relative;
 	display: flex;
-	background-color: #495057;
+	background-color: #151515;
 	background-position: 20% 20%;
 }
 
 .breadcrumbs-custom .breadcrumbs-custom-subtitle {
-	color: #aeb1be;
+	color: #FF9500;
 }
 
 @media (min-width: 576px) {
@@ -9658,9 +9658,10 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-link {
 	position: relative;
 	display: inline-block;
-	color: #151515;
+	color: #FF9500;
 	transition: .25s;
 	padding-bottom: 2px;
+	font-weight: 400;
 }
 
 .rd-navbar-static .rd-nav-link:hover {
@@ -11104,7 +11105,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-main-outer {
-	background: rgba(51, 51, 51, 0.1);
+	background: #151515;
 	position: absolute;
 	top: 100%;
 	z-index: 10;
@@ -11125,6 +11126,11 @@ html.rd-navbar-fixed-linked .page {
 .ie-11 .rd-navbar-corporate.rd-navbar-static .rd-navbar-collapse {
 	width: 100%;
 	max-width: 870px;
+}
+
+.profile-picture {
+	width: 40px;
+	height: 40px;
 }
 
 .ie-10 .rd-navbar-corporate.rd-navbar-static .unit,
