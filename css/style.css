@@ -103,6 +103,7 @@ body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	letter-spacing: .03em;
+	background-color: #fafafa;
 }
 
 @media (min-width: 768px) {
@@ -467,19 +468,30 @@ code {
 
 .wow-outer span {
 	display: block;
-	margin-top: 40px;
+	margin: 40px 0 10px 0;
+	font-size: 2rem;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	gap: 40px;
+	margin: 0 auto;
 }
 
 .produto-img {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+#produto {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	background-color: #fff;
 }
 
 .wow-outer .wow > span {
@@ -2046,6 +2058,7 @@ button {
 
 .button {
 	position: relative;
+	width: 100%;
 	overflow: hidden;
 	display: inline-block;
 	padding: 13px 35px;
@@ -5428,11 +5441,6 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 	.footer-advanced-aside + .container {
 		margin-top: 10px;
 	}
-}
-
-.container-destaques {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 1200px) {
@@ -9971,19 +9979,17 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::before {
-	content: "";
+	content: "^";
 	transform: rotate(0deg) scale(1);
 	opacity: 1;
 	visibility: visible;
-	font-family: "Material Design Icons";
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::after {
-	content: "";
+	content: "v";
 	transform: rotate(-90deg) scale(0.4);
 	opacity: 0;
 	visibility: hidden;
-	font-family: "Material Design Icons";
 }
 
 .rd-navbar-static .rd-navbar-search-toggle.active span::before {
